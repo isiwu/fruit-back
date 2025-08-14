@@ -1,8 +1,8 @@
-import { Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 var router = Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req: Request, res: Response, next: NextFunction) {
   res.send('respond with a resource');
 });
 
